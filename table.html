@@ -1,0 +1,131 @@
+<html>
+<head>
+    <title>HTML5 CA2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #131212;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f9fa;
+            color: rgb(17, 17, 17);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="4">EMPLOYEE DETAILS</th>
+            <th colspan="3">SALARY INFORMATION</th>
+            <th colspan="2">CONTACT DETAILS</th>
+        </tr>
+        <tr>
+            <th>EMPLOYEE ID</th>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>GENDER</th>
+            <th>BASIC</th>
+            <th>BONUS</th>
+            <th>TOTAL SALARY</th>
+            <th>PHONE NUMBER</th>
+            <th>EMAIL</th>
+        </tr>
+        <tr>
+            <td>Ajay Kumar</td>
+            <td>Rahul</td>
+            <td>30</td>
+            <td>Male</td>
+            <td>40000</td>
+            <td>200</td>
+            <td>42000</td>
+            <td rowspan="2" class="contact-details">
+                <table>
+                    <tr>
+                        <th>PHONE TYPE</th>
+                        <th>NUMBER</th>
+                    </tr>
+                    <tr>
+                        <td>Office</td>
+                        <td>1234567890</td>
+                    </tr>
+                    <tr>
+                        <td>Personal</td>
+                        <td>1234567890</td>
+                    </tr>
+                </table>
+            </td>
+            <td>rahul.kmr@web.com</td>
+        </tr>
+        <tr class="department">
+            <td colspan="9">Department: IT</td>
+        </tr>
+        <tr>
+            <td>EMP002</td>
+            <td>Abhishek</td>
+            <td>28</td>
+            <td>Male</td>
+            <td>45000</td>
+            <td>300</td>
+            <td>48000</td>
+            <td>1234567890</td>
+            <td>abhishek.kmr@web.com</td>
+        </tr>
+        <tr class="department">
+            <td colspan="9">Department: HR</td>
+        </tr>
+        <tr>
+            <td>EMP003</td>
+            <td>Komal</td>
+            <td>35</td>
+            <td>Female</td>
+            <td>50000</td>
+            <td>500</td>
+            <td>55000</td>
+            <td>1234567890</td>
+            <td>komal.kmr@web.com</td>
+        </tr>
+        <tr class="department">
+            <td colspan="9">Department: Finance</td>
+        </tr>
+        <tr class="project-status">
+            <td>EMP004</td>
+            <td>Yuvraj</td>
+            <td>40</td>
+            <td>Male</td>
+            <td>60000</td>
+            <td>800</td>
+            <td>68000</td>
+            <td>yuvraj.kmr@web.com</td>
+            <td rowspan="4">
+                <table>
+                    <tr>
+                        <th>PROJECT</th>
+                        <th>STATUS</th>
+                    </tr>
+                    <tr>
+                        <td>Project A</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>Project B</td>
+                        <td>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>Project C</td>
+                        <td>Not Started</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div class="footer">* This table contains confidential employee data.</div>
+</body>
+</html>
