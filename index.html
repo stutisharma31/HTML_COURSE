@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stuti Sharma's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #1f1f1f;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #4CAF50;
+        }
+
+        header p {
+            font-size: 1.5em;
+            color: #8BC34A;
+            margin-top: 10px;
+        }
+
+        section {
+            margin: 40px auto;
+            padding: 20px;
+            max-width: 800px;
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        img.profile {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #4CAF50;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        ol[reversed] {
+            list-style-type: upper-roman;
+        }
+
+        ol[type="A"] {
+            list-style-type: upper-alpha;
+        }
+
+        ol[start="3"] {
+            counter-reset: listcounter 2;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #4CAF50;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        td {
+            background-color: #2a2a2a;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #1f1f1f;
+        }
+
+        footer a {
+            color: #8BC34A;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Stuti Sharma</h1>
+        <p>Aspiring Software Developer | AI Enthusiast</p>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <img src="profile.jpg" alt="Stuti Sharma" class="profile">
+    </section>
+
+    <section>
+        <h2>Skills and Interests</h2>
+        <ol type="A" start="3" reversed>
+            <li>Programming Languages: Java, Python, SQL, JavaScript</li>
+            <li>Web Technologies: HTML, CSS, Bootstrap, React, NodeJS</li>
+            <li>Hobbies: Reading Horror Books, Learning French</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>University</th>
+                <th>Graduation Date</th>
+            </tr>
+            <tr>
+                <td>B.Tech in Computer Science and Engineering</td>
+                <td>Lovely Professional University</td>
+                <td>May 2024</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>AI-Based Stock Analysis Tool</strong>: A machine learning project that predicts stock prices based on historical data. Technologies used: Python, TensorFlow.</li>
+            <li><strong>E-Healthcare System</strong>: A web application for managing healthcare records. Technologies used: HTML, CSS, JavaScript, MySQL.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:stuti.sharma@example.com">stuti.sharma@example.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/stutisharma" target="_blank">linkedin.com/in/stutisharma</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Stuti Sharma. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
