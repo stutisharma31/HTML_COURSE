@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffb472;
+            color: #333;
+        }
+
+        header {
+            background-color: #ab5d5d;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .blog-section {
+            margin-top: 100px;
+            padding: 40px 20px;
+        }
+
+        .blog-section h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .filter-buttons {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .filter-buttons button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: hsl(161, 61%, 22%);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .filter-buttons button:hover {
+            background-color: #aaaa40;
+        }
+
+        .blogs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .blog {
+            background-color: #ffffffed;
+            margin: 15px;
+            padding: 20px;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .blog:hover {
+            transform: scale(1.05);
+        }
+
+        .blog img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .blog h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .blog p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .read-more {
+            margin-top: 10px;
+            color: #853e82;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .article-section {
+            display: none;
+            padding: 40px 20px;
+        }
+
+        .article-section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .article-section img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .article-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #077e82;
+        }
+
+        .scroll-to-top {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #3a4f19;
+            color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+        .scroll-to-top:hover {
+            background-color: #b30068;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>My Blog</header>
+
+<section id="blogs" class="blog-section">
+    <h2>Explore Our Latest Articles</h2>
+    <div class="filter-buttons">
+        <button data-category="all">All</button>
+        <button data-category="tech">Tech</button>
+        <button data-category="lifestyle">Lifestyle</button>
+        <button data-category="travel">Travel</button>
+    </div>
+    <div class="blogs">
+        <div class="blog" data-category="tech">
+            <img src="https://th.bing.com/th/id/OIP.chRPJBszkdcT5lQQq8bjGgHaEU?rs=1&pid=ImgDetMain" alt="JavaScript Libraries">
+            <h3>Top 5 JavaScript Libraries in 2024</h3>
+            <p>Stay ahead in the web development world by exploring these powerful JavaScript libraries that will dominate in 2024.</p>
+            <span class="read-more" data-article="article1">Read More</span>
+        </div>
+        <div class="blog" data-category="lifestyle">
+            <img src="https://th.bing.com/th/id/OIP.chRPJBszkdcT5lQQq8bjGgHaEU?rs=1&pid=ImgDetMain" alt="Healthy Habits">
+            <h3>Healthy Habits for a Productive Day</h3>
+            <p>Discover how adopting simple habits can boost your productivity and improve your overall well-being every day.</p>
+            <span class="read-more" data-article="article2">Read More</span>
+        </div>
+        <div class="blog" data-category="travel">
+            <img src="https://th.bing.com/th/id/OIP.chRPJBszkdcT5lQQq8bjGgHaEU?rs=1&pid=ImgDetMain" alt="Travel Destinations">
+            <h3>Top 10 Travel Destinations for 2024</h3>
+            <p>Whether you’re looking for adventure or relaxation, these travel destinations should be at the top of your list in 2024.</p>
+            <span class="read-more" data-article="article3">Read More</span>
+        </div>
+    </div>
+</section>
+
+<section id="article1" class="article-section">
+    <h2>Top 5 JavaScript Libraries in 2024</h2>
+    <img src="https://th.bing.com/th/id/OIP.chRPJBszkdcT5lQQq8bjGgHaEU?rs=1&pid=ImgDetMain" alt="JavaScript Libraries">
+    <p>JavaScript libraries make web development easier and faster. In 2024, some of the leading libraries include React, Vue.js, Svelte, and others that will revolutionize how developers build interactive and dynamic web applications.</p>
+    <p>These libraries come with numerous benefits such as efficient state management, faster rendering, and reusable components.</p>
+    <a class="back-button" href="#">Back to Articles</a>
+</section>
+
+<section id="article2" class="article-section">
+    <h2>Healthy Habits for a Productive Day</h2>
+    <img src="https://th.bing.com/th/id/OIP.chRPJBszkdcT5lQQq8bjGgHaEU?rs=1&pid=ImgDetMain" alt="Healthy Habits">
+    <p>Healthy habits are the cornerstone of a productive life. Start your day with meditation or a workout to boost your energy levels. Incorporate balanced meals to stay focused, and take short breaks to refresh your mind during work.</p>
+    <p>Practicing mindfulness and staying organized with a clear to-do list can significantly enhance your productivity throughout the day.</p>
+    <a class="back-button" href="#">Back to Articles</a>
+</section>
+
+<section id="article3" class="article-section">
+    <h2>Top 10 Travel Destinations for 2024</h2>
+    <img src="https://th.bing.com/th/id/OIP.chRPJBszkdcT5lQQq8bjGgHaEU?rs=1&pid=ImgDetMain" alt="Travel Destinations">
+    <p>Looking for the perfect vacation spot in 2024? From the pristine beaches of Bali to the historical landmarks of Rome, there’s a destination for everyone. Adventure seekers will love hiking in Patagonia, while those looking for relaxation can head to the Maldives.</p>
+    <p>These travel spots offer something for every type of traveler, whether you’re into nature, history, or just lounging on the beach.</p>
+    <a class="back-button" href="#">Back to Articles</a>
+</section>
+
+<div class="scroll-to-top" id="scrollToTopBtn">&#9650;</div>
+
+<footer>
+    <p>&copy; 2024 My Blog. All Rights Reserved.</p>
+</footer>
+
+<script>
+    // Blog Filtering
+    const filterButtons = document.querySelectorAll('.filter-buttons button');
+    const blogs = document.querySelectorAll('.blog');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const category = button.getAttribute('data-category');
+            blogs.forEach(blog => {
+                if (category === 'all' || blog.getAttribute('data-category') === category) {
+                    blog.style.display = 'block';
+                } else {
+                    blog.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // Read More functionality
+    const readMoreLinks = document.querySelectorAll('.read-more');
+    const articleSections = document.querySelectorAll('.article-section');
+
+    readMoreLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            const articleId = link.getAttribute('data-article');
+            document.querySelector(`#${articleId}`).style.display = 'block';
+            document.querySelector('#blogs').style.display = 'none';
+        });
+    });
+
+    const backButtons = document.querySelectorAll('.back-button');
+    backButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            articleSections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.querySelector('#blogs').style.display = 'block';
+        });
+    });
+
+    // Scroll to Top Button
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+    window.onscroll = () => {
+        if (window.scrollY > 300) {
+            scrollToTopBtn.style.display = 'block';
+        } else {
+            scrollToTopBtn.style.display = 'none';
+        }
+    };
+
+    scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+</body>
+</html>
