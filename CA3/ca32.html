@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+        .header {
+            background-color: #f5e8c7;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar {
+            display: flex;
+            background-color: #3a5795;
+            padding: 10px;
+        }
+        .navbar div {
+            flex: 1;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .content {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+        .content-left {
+            flex: 3;
+            background-color: #d0e7ff;
+            padding: 15px;
+        }
+        .content-left h3 {
+            color: #000;
+            margin-top: 0;
+        }
+        .content-right {
+            flex: 2;
+            background-color: #d0e7ff;
+            padding: 15px;
+        }
+        .content-right img {
+            width: 100%;
+            height: auto;
+        }
+
+        .additional-image {
+            margin: 20px;
+            text-align: center;
+        }
+        .additional-image img {
+            width: 100%;
+            height: auto;
+            max-height: 150px;
+            object-fit: cover;
+        }
+
+        .two-columns {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+        .table-section {
+            flex: 1;
+            background-color: #e7f4e4;
+            padding: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .ordered-list {
+            flex: 1;
+            background-color: #e7ffe7;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+    
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #f5e8c7;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">My WEB Page</div>
+
+    <div class="navbar">
+        <div>LOGO</div>
+        <div>HOME</div>
+        <div>INDEX</div>
+        <div>PAGE</div>
+    </div>
+
+    <div class="content">
+        
+        <div class="content-left">
+            <h3>Cyber Threat Landscape in 6G-Enabled IoT</h3>
+            <p>Enhanced attack vectors with 6G (e.g., advanced Distributed Denial-of-Service (DDoS), malware propagation). Impact of 6G features (such as ultra-reliable low-latency communication (URLLC)) on ...</p>
+        </div>
+
+    
+        <div class="content-right">
+            <img src="https://www.brookings.edu/wp-content/uploads/2017/05/hospital002.jpg" alt="Hospital Image">
+        </div>
+    </div>
+
+    <div class="additional-image">
+        <img src="https://thumbs.dreamstime.com/z/queue-to-doctor-waiting-room-hospital-seniors-medical-consultation-clinic-interior-flat-vector-illustration-174300386.jpg" alt="Additional Image">
+    </div>
+
+  
+    <div class="two-columns">
+       
+        <div class="table-section">
+            <table>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Department</th>
+                    <th>DOA</th>
+                    <th>Fee</th>
+                    <th>Gender</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Piyush</td>
+                    <td>24</td>
+                    <td>Computer</td>
+                    <td>10/01/97</td>
+                    <td>120</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Shivam</td>
+                    <td>21</td>
+                    <td>History</td>
+                    <td>24/03/98</td>
+                    <td>200</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Piyush</td>
+                  <td>24</td>
+                  <td>Computer</td>
+                  <td>10/01/97</td>
+                  <td>120</td>
+                  <td>Male</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Piyush</td>
+                <td>24</td>
+                <td>Computer</td>
+                <td>10/01/97</td>
+                <td>120</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Piyush</td>
+              <td>24</td>
+              <td>Computer</td>
+              <td>10/01/97</td>
+              <td>120</td>
+              <td>Male</td>
+          </tr>
+             
+            </table>
+        </div>
+
+
+        <div class="ordered-list">
+            <h4>Ordered Lists</h4>
+            <p>Web development languages we will learn:</p>
+            <ol>
+                <li>HTML: Hyper Text Markup Language</li>
+                <li>CSS: Cascading StyleSheets</li>
+                <li>JavaScript</li>
+                <li>JQuery</li>
+                <li>Ajax</li>
+                <li>PHP</li>
+                <li>PHP 4.0</li>
+                <li>PHP 5.0</li>
+                <li>MySQL Database</li>
+                <li>XML</li>
+            </ol>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <span>© students data. *all rights reserved</span>
+        <span>Page 100</span>
+    </div>
+</div>
+
+</body>
+</html>
