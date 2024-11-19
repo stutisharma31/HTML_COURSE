@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Management System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e4e9f2;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+    header {
+      grid-column: span 3;
+      background: #8d8b38;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+    .section {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+    }
+    .section h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #333;
+    }
+    .section img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+    footer {
+      grid-column: span 3;
+      background: #4a4a2f;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Hospital Management System
+  </header>
+  <div class="container">
+    <div class="section">
+      <h3>Patient Records</h3>
+      <p>Manage all patient data efficiently.</p>
+      <p>Accurate details</p>
+      <img src="https://via.placeholder.com/150" alt="Patient Records">
+    </div>
+    <div class="section">
+      <h3>Appointment Scheduling</h3>
+      <img src="https://via.placeholder.com/150" alt="Appointment Scheduling">
+    </div>
+    <div class="section">
+      <h3>Billing</h3>
+      <img src="https://via.placeholder.com/150" alt="Billing">
+    </div>
+    <div class="section">
+      <h3>Reports</h3>
+      <img src="https://via.placeholder.com/150" alt="Reports">
+    </div>
+  </div>
+  <footer>
+    © 2024 Hospital Management System
+  </footer>
+</body>
+</html>
